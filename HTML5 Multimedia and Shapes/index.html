@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Multimedia and Shapes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    video,
+    audio {
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-color: #000;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .contener {
+      margin: auto;
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    svg {
+      display: inline-block;
+      margin: 10px;
+      transform: rotate(90deg);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    svg rect {
+      transition: all 0.3s ease;
+    }
+
+    svg rect:hover {
+      fill: orange;
+      stroke: blue;
+      stroke-width: 1;
+    }
+    #btn{
+      margin: 50px 0;
+      padding: 10px;
+      background-color: rgb(87, 86, 86);
+      border-radius: 5px;
+      color: white;
+    }
+    #svg{
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      padding: 100px;
+    }
+
+    .svgs{
+      padding: 10px 0;
+    }
+
+    h1 {
+      color: #4b0082;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>HTML5 Multimedia and Shapes</h1>
+  <video src="https://mobstatus.com/wp-content/uploads/2021/11/All-Smile-I-Know-What-Song-Status-Video.mp4" height="400"
+    controls loop></video>
+  <audio src="WhatsApp Audio 2024-12-20 at 23.09.33_a42708ce.mp3" controls loop></audio>
+
+  <div class="contener">
+    <svg class="svg1" width="500" height="250">
+      <circle cx="150" cy="130" r="100" stroke="green" stroke-width="4" fill="yellow" />
+      <circle cx="120" cy="170" r="10" stroke="green" stroke-width="4" fill="yellow" />
+      <circle cx="120" cy="85" r="10" stroke="green" stroke-width="4" fill="yellow" />   
+      <polyline points="180,70 200,90 180,110 200,130 180,150 200,170 180,190" style="fill:yellow;stroke:red;stroke-width:4" />    </svg>
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      const gradient = ctx.createRadialGradient(200, 200, 50, 200, 200, 200);
+      gradient.addColorStop(0, "blue");
+      gradient.addColorStop(1, "purple");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 400, 400);
+      ctx.beginPath();
+      ctx.arc(200, 200, 100, 0, Math.PI * 2);
+      ctx.fillStyle = "yellow";
+      ctx.fill();
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = "red";
+      ctx.stroke();
+    </script>
+
+    <svg class="svg1" width="500" height="250">
+      <circle cx="150" cy="130" r="100" stroke="green" stroke-width="4" fill="yellow" />
+      <circle cx="120" cy="170" r="10" stroke="green" stroke-width="4" fill="yellow" />
+      <circle cx="120" cy="85" r="10" stroke="green" stroke-width="4" fill="yellow" />   
+      <line x1="190" y1="180" x2="190" y2="80" stroke="green" stroke-width="4" />
+    </svg>
+
+  </div>
+  <button id="btn">Add SVG</button>
+
+  <div id="svg"></div>
+
+  <script>
+    let btn = document.getElementById("btn");
+
+    btn.addEventListener("click", ()=>{
+      let svg = document.getElementById("svg");
+      svg.innerHTML += `<svg class="svgs" width="300" height="130">
+      <rect width="200" height="100" x="20" y="20" rx="20" ry="50" fill="#b3b3f7" fill-opacity="0.6" />
+      <rect width="30" height="100" x="20" y="20" rx="20" ry="50" fill="#b3b3f7" stroke="red" stroke-width="5"
+        fill-opacity="0" />
+      <rect width="30" height="100" x="190" y="20" rx="20" ry="50" fill="green" stroke="red" stroke-width="5"
+        fill-opacity="0.5" />
+    </svg>`;
+    })
+  </script>
+</body>
+
+</html>
