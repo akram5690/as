@@ -1,0 +1,11 @@
+Question 1: Explain the CSS box model and its components.
+Ans:The CSS box model includes:
+    Content: The text/image in the element.
+    Padding: Space between content and border.
+    Border: Surrounds padding and content.
+    Margin: Space between the element and others.
+    Each layer adds to the element's total width/height.
+
+Question 2: What is the difference between border-box and content-box in CSS?
+Ans:content-box: Default value. Width/height includes only content.
+    border-box: Width/height includes padding and border.

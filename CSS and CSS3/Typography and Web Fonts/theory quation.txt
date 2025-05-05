@@ -1,0 +1,16 @@
+Question 1: Explain the difference between web-safe fonts and custom web fonts. Whymight
+you use a web-safe font over a custom font?
+Ans: Web safe fonts are typefaces that come pre-installed as default fonts on the majority of computers and devices, regardless of operating system. Creating a web safe font stack gives you the best chance of having your text appear as intended.
+
+Question 2: What is the font-family property in CSS? How do you apply a custom GoogleFont
+to a webpage?
+Ans:The font-family property in CSS specifies the font family for an element's text.
+        How To Use Google Fonts
+        <head>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+            <style>
+                body {
+                        font-family: "Sofia", sans-serif;
+                    }
+            </style>
+        </head>

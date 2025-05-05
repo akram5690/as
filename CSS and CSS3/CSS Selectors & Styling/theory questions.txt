@@ -1,0 +1,24 @@
+Question 1: What is a CSS selector? Provide examples of element, class, and ID selectors.
+Ans: A CSS selector is a pattern used to select HTML elements you want to style.
+        Element Selector: Targets all elements of a specific type.
+        Example: p { color: blue; }
+
+        Class Selector: Targets elements with a specific class attribute.
+        Example: .highlight { background-color: yellow; }
+
+        ID Selector: Targets a single element with a specific ID.
+        Example: #header { font-size: 24px; }
+
+Question 2: Explain the concept of CSS specificity. How do conflicts between multiple styles get resolved?
+Ans: CSS specificity determines which style rule applies when multiple rules target the same element. It is calculated based on:
+    Inline styles (highest specificity)
+    ID selectors
+    Class selectors, attributes, pseudo-classes
+    Element selectors and pseudo-elements
+    Conflicts are resolved by applying the rule with the highest specificity. If specificity is equal, the last declared rule in the stylesheet is applied.
+
+Question 3: What is the difference between internal, external, and inline CSS?
+Ans: Inline CSS: Written inside the HTML element using the style attribute.
+    Example: <p style="color:red;">
+    Pros: Quick to apply.
+    Cons: Not reusable, clutters HTML.

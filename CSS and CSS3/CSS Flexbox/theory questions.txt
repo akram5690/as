@@ -1,0 +1,10 @@
+Question 1: What is CSS Flexbox?
+Ans:Flexbox is a layout model that allows items within a container to be distributed and aligned efficiently.
+    Flex container: The parent element with display: flex.
+    Flex items: The children inside the flex container.
+
+Question 2: Explain justify-content, align-items, flex-direction.
+Ans:justify-content: Aligns items horizontally.
+    align-items: Aligns items vertically.
+    flex-direction: Sets the direction (row/column) of items.
+

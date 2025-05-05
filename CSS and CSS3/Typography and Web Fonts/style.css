@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f2f2f2;
+    color: #2a2a2a;
+    line-height: 1.8;
+  }
+  
+  .blog-wrapper {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+ 
+  .hero-image {
+    background-image: url('https://bairesdev.mo.cloudinary.net/blog/2022/03/frontend-1.jpg?tx=w_1920,q_auto');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .blog-content {
+    padding: 2rem 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .blog-content p {
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+    color: #333;
+  }
+  
+
+  .blog-footer {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 1.8rem;
+    }
+  
+    .blog-content {
+      padding: 1.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .blog-content p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,13 @@
+Question 1: What is CSS Grid?
+Ans:CSS Grid is a two-dimensional layout system for web design. Use it for complex layouts like rows and columns.
+    Flexbox is one-dimensional (row or column), Grid handles both.
+
+Question 2: Describe grid-template-columns, grid-template-rows, grid-gap
+Ans:grid-template-columns: Defines column sizes.
+    Example: grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows: Defines row sizes.
+    Example: grid-template-rows: auto auto;
+
+    grid-gap: Adds space between grid items.
+    Example: grid-gap: 10px;
